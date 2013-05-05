@@ -8,7 +8,7 @@ It was tested with an Argox PPLA USB printer.
 
 Usage is simple:
 
-    node http-ppla.js <authToken> <port>
+    node http-ppla.js <authToken>
 
 The server will listen on port 8080.
 
