@@ -14,7 +14,7 @@ The server will listen on port 8080.
 
 HTTP Requests must be in this format:
 
-{ base_commands: '0=K1503&1=O0220&2=f320', // STX commands
-  label_commands: '0=LCommand1&1=LCommand2&2=LCommand3', // Label formatting commands, they will be written between L and E commands
-  auth_token: 'authTokenExpectedByServer' } // the authToken configured in the server
-
+    { base_commands: '0=K1503&1=O0220&2=f320',                // STX commands
+      label_commands: '0=LCommand1&1=LCommand2&2=LCommand3',  // Label formatting commands,
+                                                              // these will be written between L and E commands
+      auth_token: 'authTokenExpectedByServer' }               // the authToken configured in the server
