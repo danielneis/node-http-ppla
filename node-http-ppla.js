@@ -49,6 +49,8 @@ var server = http.createServer(function(request, response) {
                             base_commands.push(Buffer.concat([new Buffer([0x02], 'hex'),  new Buffer(bc)]));
                         });
 
+                        base_commands.push(Buffer.concat([new Buffer([0x02], 'hex'),  new Buffer('L')]));
+
                         var label_commands = [];
 
                         var postDataLabelCommands = querystring.parse(postData.label_commands);
