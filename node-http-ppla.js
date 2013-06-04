@@ -54,8 +54,6 @@ var server = http.createServer(function(request, response) {
                             label_commands.push(new Buffer(postDataLabelCommands[key]));
                         });
 
-                        printer.write(Buffer.concat([new Buffer([0x02], 'hex'),  new Buffer('L')])); // Start label
-
                         for (var c in base_commands) {
                             printer.write(base_commands[c]);
                             printer.write(new Buffer([0x0D], 'hex')); // <CR>
